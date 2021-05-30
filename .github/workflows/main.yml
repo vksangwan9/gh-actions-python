@@ -3,10 +3,10 @@ name: on_push
 jobs:
   gitHubActionForPytest:
     name: Github Action for pytest
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@master
     - name: Github Action for pytest
       uses: actions/setup-python@master
       with:
-        args: python setup.py develop; pytest
+        args: python setup.py develop && pytest
