@@ -3,7 +3,7 @@ name: on_push
 jobs:
   gitHubActionForPytest:
     name: Github Action for pytest
-    runs-on: windows-latest
+    runs-on: macos-latest
     steps:
     - uses: actions/checkout@master
     - name: Github Action for pytest
