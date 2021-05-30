@@ -7,6 +7,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Github Action for pytest
-      uses: actions/setup-python@master
+      uses: cclauss/GitHub-Action-for-pytest@master
       with:
         args: python setup.py develop && pytest
