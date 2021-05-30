@@ -5,7 +5,7 @@ jobs:
     name: Github Action for pytest
     runs-on: ubuntu-latest
     steps:
-    - uses: action/checkout@master
+    - uses: actions/checkout@master
     - name: Github Action for pytest
       uses: cclauss/GitHub-Action-for-pytest@master
       with:
